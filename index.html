@@ -9,25 +9,17 @@
   <body>
     <div class="grid container">
       <div class="cs1 ce12">
-        <img src="/src/assets/welcome.png" alt="" />
+        <h1>Panel</h1>
       </div>
       <div class="cs1 ce12">
-        <h1>Great, your app is running locally</h1>
-        <p>
-          You can now create your Developer team to get your app running in
-          Miro.
-        </p>
-      </div>
-      <div class="cs1 ce12">
-        <a
+        <button
           class="button button-primary"
-          href="https://developers.miro.com/docs/build-your-first-hello-world-app#step-2-create-a-developer-team-in-miro"
-          target="_blank"
+	  onclick='openModal()'
         >
-          Create a Developer team
-        </a>
+          Open modal
+        </button>
       </div>
     </div>
-    <script type="module" src="/src/index.js"></script>
+    <script src="/src/index.js"></script>
   </body>
 </html>

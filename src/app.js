@@ -1,9 +1,9 @@
-async function addSticky() {
-  const stickyNote = await miro.board.createStickyNote({
-    content: 'Hello, World!',
-  });
-
-  await miro.board.viewport.zoomTo(stickyNote);
+async function openModal() {
+    await miro.board.ui.openModal({url: 'modal.html'})
 }
 
-addSticky();
+async function init() {
+    await miro.board.ui.on('selection:update', console.log)
+}
+
+init();
