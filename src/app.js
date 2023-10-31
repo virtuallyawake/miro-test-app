@@ -3,7 +3,9 @@ async function openModal() {
 }
 
 async function init() {
-    await miro.board.ui.on('selection:update', console.log)
+    await miro.board.ui.on('selection:update', e => {
+        console.log("PANEL OUTPUT: ", e)
+    })
 }
 
 init();
